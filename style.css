@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background:url(./pexels-karolina-grabowska-5208362.jpg);
+    display: flex;
+    background-size:cover ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the todo list */
+.todo-container {
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid;
+    box-shadow: 30px 20px 25px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    color: gray;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+#taskInput {
+    width: 75%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+#taskInput:focus {
+    border-color: #4a90e2;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+/* Task list styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    /* Limit the height of the task list */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    margin-bottom: 10px;
+}
+
+li {
+    background-color: #b8b8f3;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #b8b8f3;;
+}
+
+/* Completed tasks */
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+/* Remove button styling */
+.remove-btn {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.remove-btn:hover {
+    background-color: #d9534f;
+}
